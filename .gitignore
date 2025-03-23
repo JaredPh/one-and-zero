@@ -1,1 +1,4 @@
 node_modules
+
+# Generated files
+routes.d.ts

@@ -8,3 +8,10 @@ run = """
 #!/usr/bin/env zsh
 yarn install
 """
+
+[tasks.dev]
+description = "Run dev"
+run = """
+#!/usr/bin/env zsh
+yarn dev
+"""
