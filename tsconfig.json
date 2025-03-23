@@ -2,9 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "~/*": [
-        "./*"
-      ]
+      "~/*": ["./*"]
     },
     "strict": true,
     "rootDir": ".",
@@ -14,22 +12,8 @@
     "skipLibCheck": true,
     "jsx": "react-jsx",
     "noImplicitAny": false,
-    "types": [
-      "node",
-      "react",
-      "vite/client"
-    ],
-    "lib": [
-      "dom",
-      "esnext"
-    ]
+    "types": ["node", "react", "vite/client"],
+    "lib": ["dom", "esnext"]
   },
-  "exclude": [
-    "node_modules",
-    ".expo",
-    "**/test",
-    "**/dist",
-    "**/types",
-    "**/tests"
-  ]
+  "exclude": ["node_modules", ".expo", "**/test", "**/dist", "**/types", "**/tests"]
 }

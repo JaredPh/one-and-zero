@@ -1,11 +1,11 @@
-import { Slot } from 'one'
-import { TamaguiProvider, Theme } from 'tamagui'
-import { useColorScheme } from 'react-native'
+import { Slot } from 'one';
+import { TamaguiProvider, Theme } from 'tamagui';
+import { useColorScheme } from 'react-native';
 
-import config from '../tamagui.config'
+import config from '../tamagui.config';
 
 export default function Layout() {
-  const colorScheme = useColorScheme()
+  const colorScheme = useColorScheme();
 
   return (
     <TamaguiProvider config={config}>
@@ -13,5 +13,5 @@ export default function Layout() {
         <Slot />
       </Theme>
     </TamaguiProvider>
-  )
+  );
 }

@@ -5,9 +5,7 @@
   },
   "linter": {
     "enabled": true,
-    "ignore": [
-      ".tamagui"
-    ],
+    "ignore": [".tamagui"],
     "rules": {
       "correctness": {
         "useExhaustiveDependencies": "off",
@@ -69,9 +67,7 @@
     "indentStyle": "space",
     "indentWidth": 2,
     "lineWidth": 100,
-    "ignore": [
-      ".tamagui"
-    ]
+    "ignore": [".tamagui"]
   },
   "javascript": {
     "formatter": {

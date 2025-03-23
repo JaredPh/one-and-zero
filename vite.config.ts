@@ -1,6 +1,6 @@
-import { tamaguiPlugin } from '@tamagui/vite-plugin'
-import { one } from 'one/vite'
-import type { UserConfig } from 'vite'
+import { tamaguiPlugin } from '@tamagui/vite-plugin';
+import { one } from 'one/vite';
+import type { UserConfig } from 'vite';
 
 export default {
   plugins: [
@@ -21,13 +21,10 @@ export default {
   },
 
   optimizeDeps: {
-    include: [
-      '@tamagui/core',
-      '@tamagui/config',
-    ],
+    include: ['@tamagui/core', '@tamagui/config'],
   },
 
   build: {
     cssTarget: 'safari15',
   },
-} satisfies UserConfig
+} satisfies UserConfig;
