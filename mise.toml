@@ -15,3 +15,24 @@ run = """
 #!/usr/bin/env zsh
 yarn dev
 """
+
+[tasks.format]
+description = "Format code using Biome"
+run = """
+#!/usr/bin/env zsh
+yarn format
+"""
+
+[tasks.lint]
+description = "Lint code using Biome"
+run = """
+#!/usr/bin/env zsh
+yarn lint
+"""
+
+[tasks.check]
+description = "Check and fix code using Biome"
+run = """
+#!/usr/bin/env zsh
+yarn check
+"""
