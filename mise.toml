@@ -1,5 +1,7 @@
 [tools]
+cocoapods = "1.15.2"
 node = "20.12.2"
+ruby = "3.2"
 yarn = "1.22.22"
 
 [tasks.install-deps]
@@ -35,4 +37,11 @@ description = "Check and fix code using Biome"
 run = """
 #!/usr/bin/env zsh
 yarn check
+"""
+
+[tasks.prebuild]
+description = "Check and fix code using Biome"
+run = """
+#!/usr/bin/env zsh
+yarn prebuild
 """

@@ -1,5 +1,17 @@
+.DS_Store
+
+yarn-error.log
+yarn-debug.log
+
+tmp
+dist
 node_modules
+
+.env
 
 # Generated files
 routes.d.ts
 .tamagui
+.expo
+/ios
+/android

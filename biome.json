@@ -5,7 +5,7 @@
   },
   "linter": {
     "enabled": true,
-    "ignore": [".tamagui"],
+    "ignore": [".tamagui", "dist", "node_modules", "routes.d.ts"],
     "rules": {
       "correctness": {
         "useExhaustiveDependencies": "off",

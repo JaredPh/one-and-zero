@@ -1,4 +1,4 @@
-import { styled, Text, YStack } from 'tamagui';
+import { Text, YStack } from 'tamagui';
 
 export default function App() {
   return (

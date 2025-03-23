@@ -5,14 +5,18 @@
   "license": "MIT",
   "scripts": {
     "dev": "one dev",
+    "prebuild": "one prebuild",
     "build": "one build",
     "serve": "one serve",
     "format": "biome format --write .",
     "lint": "biome lint .",
-    "check": "biome check --apply ."
+    "check": "biome check --apply .",
+    "android": "one run:android",
+    "ios": "one run:ios"
   },
   "dependencies": {
     "@tamagui/config": "^1.125.26",
+    "expo": "~52.0.40",
     "one": "1.1.471",
     "react": "^19.0.0",
     "react-native": "^0.76.5",
@@ -25,6 +29,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
+    "@react-native-community/cli": "^18.0.0",
     "@tamagui/vite-plugin": "^1.125.26",
     "@types/node": "^22.1.0",
     "@types/react": "^19.0.12",
