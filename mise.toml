@@ -1,0 +1,10 @@
+[tools]
+node = "20.12.2"
+yarn = "1.22.22"
+
+[tasks.install-deps]
+description = "Install dependencies"
+run = """
+#!/usr/bin/env zsh
+yarn install
+"""
