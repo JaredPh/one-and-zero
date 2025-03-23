@@ -8,12 +8,15 @@
     "serve": "one serve"
   },
   "dependencies": {
+    "@tamagui/config": "^1.125.26",
     "one": "^1.1.471",
     "react": "^19.0.0",
     "react-native": "^0.78.1",
-    "react-native-web": "^0.19.13"
+    "react-native-web": "^0.19.13",
+    "tamagui": "^1.125.26"
   },
   "devDependencies": {
+    "@tamagui/vite-plugin": "^1.125.26",
     "@types/react": "^19.0.12",
     "vite": "^6.2.2"
   },

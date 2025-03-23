@@ -1,16 +1,17 @@
-import { View, Text } from "react-native";
+import { styled, Text, YStack } from 'tamagui'
 
 export default function App() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-        minHeight: "100%",
-      }}
+    <YStack
+      flex={1}
+      gap="$4"
+      justifyContent="center"
+      alignItems="center"
+      height="100vh"
+      width="100vw"
+      backgroundColor="$background"
     >
-      <Text>Hello World!</Text>
-    </View>
+      <Text color="$text">Hello World!</Text>
+    </YStack>
   );
 }
