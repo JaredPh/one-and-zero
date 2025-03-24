@@ -15,3 +15,5 @@ routes.d.ts
 .expo
 /ios
 /android
+
+**/.terraform/*
