@@ -1,17 +1,17 @@
-import { Text, YStack } from 'tamagui';
+import {
+  YStack,
+} from "tamagui";
 
 export default function App() {
   return (
     <YStack
-      flex={1}
-      gap='$4'
-      justifyContent='center'
-      alignItems='center'
-      height='100vh'
-      width='100vw'
-      backgroundColor='$background'
+      fullscreen
+      width="100vw"
+      gap="$8"
+      background="$background"
+      p="$8"
     >
-      <Text color='$text'>Hello World!</Text>
+      <Text>Hello World!</Text>
     </YStack>
   );
 }
