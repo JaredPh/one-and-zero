@@ -3,7 +3,8 @@ import "./_layout.css";
 
 import { SchemeProvider } from "@vxrn/color-scheme";
 import { LoadProgressBar, Slot } from "one";
-import { TamaguiRootProvider } from "../src/tamagui/TamaguiRootProvider";
+import { TamaguiRootProvider } from "~/tamagui/TamaguiRootProvider";
+import { SafeAreaProvider } from "react-native-safe-area-context";
 
 export default function Layout() {
   return (
@@ -25,7 +26,9 @@ export default function Layout() {
 
         <SchemeProvider>
           <TamaguiRootProvider>
-            <Slot />
+            <SafeAreaProvider>
+              <Slot />
+            </SafeAreaProvider>
           </TamaguiRootProvider>
         </SchemeProvider>
       </body>
