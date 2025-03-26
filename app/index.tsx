@@ -15,7 +15,7 @@ import {
 import { ErrorBoundary } from "react-error-boundary";
 
 import { ToggleThemeButton } from "~/interface/ToggleThemeButton";
-import { authClient, useAuth } from "~/better-auth/auth-client";
+import { authClient, useAuth } from "~/lib/better-auth/auth-client";
 
 type Mode = "login" | "register";
 const modes: { label: string; value: Mode }[] = [

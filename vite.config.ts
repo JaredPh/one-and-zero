@@ -23,8 +23,8 @@ export default {
     tamaguiPlugin({
       optimize: process.env.NODE_ENV === "production",
       components: ["tamagui"],
-      config: "./src/tamagui/tamagui.config.ts",
-      outputCSS: "./src/tamagui/tamagui.css",
+      config: "./src/lib/tamagui/tamagui.config.ts",
+      outputCSS: "./src/lib/tamagui/tamagui.css",
     }),
   ],
 } satisfies UserConfig;
