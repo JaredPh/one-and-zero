@@ -19,6 +19,13 @@ run = """
 yarn dev
 """
 
+[tasks.tunnel]
+description = "Run dev"
+run = """
+#!/usr/bin/env zsh
+ngrok http --url=mastodon-composed-lovely.ngrok-free.app 8081
+"""
+
 [tasks.format]
 description = "Format code using Biome"
 run = """

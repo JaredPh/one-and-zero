@@ -57,7 +57,7 @@ export default function App() {
   const [error, setError] = useState<object | null>(null);
 
   const [email, setEmail] = useState<string>("dev+tu1@jared.ph");
-  const [password, setPassword] = useState<string>("Password1!");
+  const [password, setPassword] = useState<string>("Password1");
 
   const handleSubmit = (e: Event) => {
     e.preventDefault();

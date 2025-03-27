@@ -27,4 +27,8 @@ export default {
       outputCSS: "./src/lib/tamagui/tamagui.css",
     }),
   ],
+  server: {
+    host: true,
+    allowedHosts: ["localhost", ".ngrok-free.app"],
+  },
 } satisfies UserConfig;

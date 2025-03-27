@@ -34,3 +34,17 @@ resource "aws_dynamodb_table" "terraform_state_lock" {
     Project = var.project_name
   }
 }
+
+module "database" {
+  source = "./modules/database"
+
+  aws_region   = var.aws_region
+  environment  = var.environment
+  project_name = var.project_name
+
+  postgres_credentials = {
+    username = local.zero_postgres_credentials.username
+    password = local.zero_postgres_credentials.password
+  }
+}
+

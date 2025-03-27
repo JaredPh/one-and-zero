@@ -1,3 +1,5 @@
+create database onezero_auth;
+
 create table "user" (
   "id" text not null primary key,
   "name" text not null,

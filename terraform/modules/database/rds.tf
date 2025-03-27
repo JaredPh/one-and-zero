@@ -1,15 +1,3 @@
-data "aws_secretsmanager_secret" "zero_postgres_credentials" {
-  name = "${var.project_name}/zero_postgres/credentials/${var.environment}"
-}
-
-data "aws_secretsmanager_secret_version" "zero_postgres_credentials_version" {
-  secret_id = data.aws_secretsmanager_secret.zero_postgres_credentials.id
-}
-
-locals {
-  zero_postgres_credentials = jsondecode(data.aws_secretsmanager_secret_version.zero_postgres_credentials_version.secret_string)
-}
-
 resource "aws_iam_service_linked_role" "zero_postgres" {
   aws_service_name = "rds.amazonaws.com"
   description      = "Service linked role for RDS"
@@ -76,8 +64,8 @@ resource "aws_db_instance" "zero_postgres" {
   allocated_storage     = 20
   max_allocated_storage = 20
 
-  username = local.zero_postgres_credentials.username
-  password = local.zero_postgres_credentials.password
+  username = var.postgres_credentials.username
+  password = var.postgres_credentials.password
 
   skip_final_snapshot = var.environment == "prod" ? false : true
 
